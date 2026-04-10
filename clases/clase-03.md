@@ -1,3 +1,3 @@
-#hoy creamos nuestro github
+# hoy creamos nuestro github
 
 tenemos que ver una pelicula y comentarlas
