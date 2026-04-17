@@ -37,3 +37,19 @@ function draw() {
   ellipse(x, 200, 50, 50); // Dibuja la forma
   x += 2; // Actualiza la posición
 }
+
+## Usar frameRate()
+
+La función frameRate(n) establece cuántos fotogramas por segundo (FPS) se dibujarán. P5.js usa 60 FPS por defecto. 
+
+**Acelerar:** frameRate(120); (intenta aumentar la velocidad).
+
+**Decelerar:** frameRate(10); (hace la animación más lenta). 
+
+**example**
+
+function setup() {
+  createCanvas(400, 400);
+  frameRate(30); // Reduce la velocidad a 30 fotogramas por segundo
+}
+
