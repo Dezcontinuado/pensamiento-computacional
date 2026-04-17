@@ -57,6 +57,32 @@ function setup() {
 
 La función constrain(valor, min, max) es la forma más rápida de mantener un valor dentro de un rango permitido.
 
+**example**
+
+let x, y;
+let radio = 25;
+
+function setup() {
+  createCanvas(400, 400);
+  x = width / 2;
+  y = height / 2;
+}
+
+function draw() {
+  background(220);
+  
+  // Mover con el teclado o ratón
+  if (keyIsDown(LEFT_ARROW)) x -= 5;
+  if (keyIsDown(RIGHT_ARROW)) x += 5;
+  
+  // LIMITE: Mantiene X entre el radio y el ancho menos el radio
+  x = constrain(x, radio, width - radio);
+  y = constrain(y, radio, height - radio);
+  
+  ellipse(x, y, radio * 2);
+}
+
+
 ## 6. Usar sentencias if para rebotar (visto en clases)
 
 Para objetos que se mueven solos y necesitas que reboten al tocar el borde, comprueba si la posición supera el ancho (width) o alto (height).
