@@ -5,7 +5,7 @@
 
 ## Descripción del disco
 
-![Portada de álbum]()
+![Portada de álbum](portada.jpg)
 
 - "Los gangsters también lloran"
 - 2024, 29 de Marzo
