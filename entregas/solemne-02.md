@@ -1,21 +1,26 @@
 ## Integrantes del grupo
 
-- (Nombre apellido) [cuentaGithub](https://github.com/cuentaGithub)
-- (Nombre apellido) [cuentaGithub](https://github.com/cuentaGithub)
+- Jose Bravo [cuentaGithub](https://github.com/Eiivor07)
+- Romina Insotroza [cuentaGithub](https://github.com/Dezcontinuado)
 
 ## Descripción del disco
 
-![Portada de álbum xxxx yyyy]()
+![Portada de álbum]()
 
-- (Nombre del álbum)
-- Año del álbum
-- Artista
+- "Los gangsters también lloran"
+- 2024, 29 de Marzo
+- Pablo Chill-E
 - Tracklist
 
 ```txt
-1. Cancion 1
-2. Cancion 2
-3. Cancion 3
+1. LGTLL (feat. Drago 200)
+2. Resentia
+3. Bastardo (feat. Ñengo Flow & Jere Klein)
+4. Carita Triste
+5. Gitana (feat. Bryartz)
+6. Bandida (feat. EL BAI)
+7. Pensando En Ti (feat. Casper Magico)- Remix
+8. Cora Rto (feat. pailita)
 ```
 
 - Aspecto del álbum a desarrollar (premisa)
