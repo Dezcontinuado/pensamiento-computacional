@@ -25,7 +25,11 @@
 
 - Aspecto del álbum a desarrollar (premisa)
 
-> Lorem ipsum blablabla
+> El disco está construido sobre la contradicción entre dureza callejera y vulnerabilidad afectiva.
+> La estética del mafioso clásico y de la sensivilidad emocional.
+> Sonido más íntimo y barrial.
+> Mezcla entre poder, tristeza, calle y romanticismo roto.
+
 
 ## Conclusión del proceso
 
