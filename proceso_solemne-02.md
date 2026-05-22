@@ -8,7 +8,7 @@ La idea parte por una lluvia de balas, en un ambiente marginal, que simbolice la
 y exposición a circunstacias de vulnerabilidad. 
 
 Partimos creando un espacio de "barrio" utilizando bloques habitacionales caracteristicos de las poblaciones y sectores marginales
-que constantemente son mencionados o relacionados a la música urbana chilena. Y es a este escenario al cual le vamos agregando distincas animaciones
+que constantemente son mencionados o relacionados a la música urbana chilena. Y es a este escenario al cual le vamos agregando distintas animaciones
 desde "la lluvia de balas", las ventanas prendindo y apagando y al hombre de traje caminando.
 
 
