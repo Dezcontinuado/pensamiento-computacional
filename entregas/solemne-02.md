@@ -86,7 +86,32 @@ El ciclo for (Animación y Limpieza): Un bucle recorre las listas de arriba a ab
 Si la Y de una línea supera el alto de la pantalla (height), usamos .splice(i, 1) para borrarla de la lista y que la computadora no trabaje de más guardando objetos invisibles.
 
 ```js
-// Tu pedazo de código acá
+
+  // __________________ OBSTÁCULOS Y COLISIONES ________________
+  // Crear una nueva línea cada 20 fotogramas 
+  if (frameCount % 20 === 0) {
+    lineasX.push(random(0, width - anchoLinea));
+    lineasY.push(-altoLinea); 
+  }
+
+  // Mover y dibujar las líneas
+  for (let i = 0; i < lineasY.length; i++) {
+    // Movimiento hacia abajo
+    lineasY[i] = lineasY[i] + velocidadLineas;
+
+    //  línea 
+    fill(230, 175, 46); 
+    rect(lineasX[i], lineasY[i], anchoLinea, altoLinea);
+
+    //  colisión
+    if (lineasX[i] < jugadorX + anchoJugador &&
+        lineasX[i] + anchoLinea > jugadorX &&
+        lineasY[i] < jugadorY + altoJugador &&
+        lineasY[i] + altoLinea > jugadorY) {
+      
+      juegoTerminado = true;
+    }
+  }
 ```
 
 ### 3-Ventanas parpadeantes
