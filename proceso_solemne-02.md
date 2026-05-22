@@ -12,7 +12,7 @@ que constantemente son mencionados o relacionados a la música urbana chilena. Y
 desde "la lluvia de balas", las ventanas prendindo y apagando y al hombre de traje caminando.
 
 
-## código
+## código 01
 ```txt
 // =======================
 // ESCENA LLUVIOSA URBANA
@@ -172,7 +172,7 @@ function drawDoor(x, y) {
   stroke(0);
   strokeWeight(4);
 
-  rect(x, y, 55, 160);
+  rect(x, y, 55, 140);
 
   // abertura iluminada
   fill(255, 220, 100);
@@ -325,3 +325,171 @@ class Drop {
 }
 
 ```
+
+# código lluvia
+
+```txt
+
+let rain = [];
+
+  // lluvia 1
+  for (let i = 0; i < 500; i++) {
+    rain.push(new Drop());
+  }
+  // lluvia
+  for (let drop of rain) {
+    drop.fall();
+    drop.show();
+  }
+
+===================
+LLUVIA
+===================
+
+class Drop {
+
+  constructor() {
+
+    this.x = random(width);
+    this.y = random(-height, height);
+
+    this.len = random(10, 25);
+    this.speed = random(5, 12);
+  }
+
+  fall() {
+
+    this.y += this.speed;
+    this.x -= 2;
+
+    if (this.y > height) {
+
+      this.y = random(-200, -100);
+      this.x = random(width);
+    }
+  }
+
+  show() {
+
+    stroke(200, 220, 255, 120);
+    strokeWeight(2);
+
+    line(
+      this.x,
+      this.y,
+      this.x - 4,
+      this.y + this.len
+    );
+  }
+```
+
+# código ventanas
+
+```txt
+
+let windows = [];
+
+// crear ventanas
+createWindows();
+
+// ventanas dinámicas
+updateWindows();
+
+================
+VENTANAS
+================
+
+function createWindows() {
+
+  addBuildingWindows(80, 140);
+  addBuildingWindows(560, 140);
+}
+
+function addBuildingWindows(x, y) {
+
+  let positions = [
+
+    [x + 50, y + 40, true],
+    [x + 145, y + 40, false],
+    [x + 240, y + 40, true],
+
+    [x + 50, y + 190, false],
+    [x + 145, y + 190, false],
+    [x + 240, y + 190, false],
+
+    [x + 50, y + 350, false],
+    [x + 240, y + 350, false]
+  ];
+
+  for (let p of positions) {
+
+    windows.push({
+
+      x: p[0], 
+      y: p[1],
+      blinds: p[2],
+
+      // estado inicial
+      on: random() > 0.3,
+
+      // velocidad cambio
+      timer: int(random(80, 300))
+    });
+  }
+}
+
+function updateWindows() {
+
+  for (let w of windows) {
+
+    // contador
+    w.timer--;
+
+    // cambio lento
+    if (w.timer <= 0) {
+
+      w.on = random() > 0.3;
+
+      w.timer = int(random(120, 400));
+    }
+
+    drawWindow(w.x, w.y, w.blinds, w.on);
+  }
+}
+
+function drawWindow(x, y, blinds, lightOn) {
+
+  // brillo
+  if (lightOn) {
+
+    noStroke();
+    fill(255, 210, 80, 60);
+
+    rect(x - 5, y - 5, 70, 70);
+  }
+
+  // ventana
+  stroke(0);
+  strokeWeight(3);
+
+  if (lightOn) {
+    fill(255, 210, 90);
+  } else {
+    fill(35, 35, 45);
+  }
+
+  rect(x, y, 60, 60);
+
+  // división
+  line(x + 30, y, x + 30, y + 60);
+
+  // persianas
+  if (blinds) {
+
+    for (let i = 10; i < 60; i += 10) {
+
+      line(x, y + i, x + 60, y + i);
+    }
+  }
+}
+´´´
