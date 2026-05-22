@@ -33,15 +33,17 @@
 
 ## Conclusión del proceso
 
-- Distancia entre premisa y resultado
+- El resultado final quedo similar a lo que teniamos planeado desde un principio.
 
-> Lorem ipsum blablabla párrafo 1
->
-> Lorm ipsum párrafo 2
+> Poder entender cosas que aun no vemos en clases para lograr presentar lo que teniamos en mente.
+> Con este trabajo pudimos comprender mucho mejor aspectos que no logramos entender al cien en clases.
+> 
 
 - Cosas no conseguidas
 
-> Lorem ipsum blablabla
+> Que el aspecto del personaje fuera mas ruda o con aires de mafioso.
+> Que la lluvia fuera mas realista
+> Zapatillas en los cables
 
 - Descubrimientos al trabajar
 
@@ -71,11 +73,12 @@
 
 - IA utilizada(s) y tipo de licencia (pago, gratuita)
 
-> Chatgpt gratis, Claude pagado, etc
+> Chatgpt gratis y Gemeni gratis
 
-- Problema a resolver a través de la IA
-
-> Generación de grillas, animación de imagen, etc
+1. Efecto de encendido y apagado de las ventanas
+2. Lluvia
+3. Lograr que el personaje se mueva dentro del eje x
+4. La funcionalidad de videojuego 
 
 - Prompts utilizados
 
