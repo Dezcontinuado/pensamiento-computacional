@@ -493,8 +493,6 @@ function drawWindow(x, y, blinds, lightOn) {
   }
 }
 ´´´
-
-
 ## código 02
 
 ```txt
