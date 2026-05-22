@@ -494,7 +494,8 @@ function drawWindow(x, y, blinds, lightOn) {
 }
 ´´´
 
-# código 02
+
+## código 02
 
 ```txt
 
